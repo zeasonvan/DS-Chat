@@ -1,4 +1,4 @@
-package io.example.chatdemo;
+package com.zeasonvan.dschat;
 
 import android.content.SharedPreferences;
 import android.security.keystore.KeyGenParameterSpec;

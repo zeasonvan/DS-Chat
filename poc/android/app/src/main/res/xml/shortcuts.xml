@@ -8,8 +8,8 @@
         android:enabled="true">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.example.chatdemo"
-            android:targetClass="io.example.chatdemo.MainActivity"
+            android:targetPackage="com.zeasonvan.dschat"
+            android:targetClass="com.zeasonvan.dschat.MainActivity"
             android:data="dschat://chat/new" />
     </shortcut>
     <shortcut
@@ -20,8 +20,8 @@
         android:enabled="true">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.example.chatdemo"
-            android:targetClass="io.example.chatdemo.MainActivity"
+            android:targetPackage="com.zeasonvan.dschat"
+            android:targetClass="com.zeasonvan.dschat.MainActivity"
             android:data="dschat://chat/voice" />
     </shortcut>
     <shortcut
@@ -32,8 +32,8 @@
         android:enabled="true">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="io.example.chatdemo"
-            android:targetClass="io.example.chatdemo.MainActivity"
+            android:targetPackage="com.zeasonvan.dschat"
+            android:targetClass="com.zeasonvan.dschat.MainActivity"
             android:data="dschat://chat/camera" />
     </shortcut>
 </shortcuts>

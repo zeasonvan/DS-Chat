@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">DS Chat</string>
     <string name="title_activity_main">DS Chat</string>
-    <string name="package_name">io.example.chatdemo</string>
-    <string name="custom_url_scheme">io.example.chatdemo</string>
+    <string name="package_name">com.zeasonvan.dschat</string>
+    <string name="custom_url_scheme">com.zeasonvan.dschat</string>
     <string name="shortcut_new_chat">New chat</string>
     <string name="shortcut_voice">Voice input</string>
     <string name="shortcut_camera">Take photo</string>
