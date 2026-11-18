@@ -1,19 +1,31 @@
 # DS Chat
 
-基于 [deepseek-ai/chat-demo](https://github.com/deepseek-ai/chat-demo) 开发的 Android 客户端。
-该项目受这个开源 Web Demo 启发，在其基础上用 Capacitor 封装成 App，并做了移动端改造。
+**English** | [简体中文](README.zh-CN.md)
 
-> 非官方项目，与 DeepSeek 无关联。
+An unofficial Android client for the DeepSeek API, built on top of
+[deepseek-ai/chat-demo](https://github.com/deepseek-ai/chat-demo) and wrapped
+with Capacitor.
 
-## 结构
+> Not affiliated with, endorsed by, or sponsored by DeepSeek.
 
-| 路径 | 说明 |
+## Features
+
+- Streaming chat with Markdown, code highlighting, KaTeX and Mermaid
+- Image and file attachments, share-as-image, table and diagram export
+- Import/export of DeepSeek history ZIP archives
+- Speech input and text-to-speech playback
+- API key kept in the Android Keystore (AES-GCM); chats stay on the device
+- Light / dark / system theme, Chinese and English UI
+
+## Structure
+
+| Path | Description |
 | --- | --- |
-| `app/` | 基于 chat-demo 改造的 Web 前端（React + TypeScript + rspack） |
-| `poc/` | Capacitor 8 Android 壳与原生插件 |
-| `branding/` | 应用图标、启动页与吉祥物素材 |
+| `app/` | Web app based on chat-demo (React + TypeScript + rspack) |
+| `poc/` | Capacitor 8 Android shell and native plugins |
+| `branding/` | App icon, splash screen and mascot assets |
 
-## 构建
+## Build
 
 ```bash
 cd app && npm install && npm run build
@@ -21,6 +33,7 @@ cd ../poc && rsync -a --delete ../app/dist/ www/ && npx cap sync android
 cd android && ./gradlew assembleDebug
 ```
 
-## 许可
+## License
 
-MIT License，见 [LICENSE](LICENSE)。上游版权声明与修改说明见 [NOTICE](NOTICE)。
+MIT — see [LICENSE](LICENSE). Upstream copyright and modification notes are in
+[NOTICE](NOTICE).
