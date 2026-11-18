@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="new_chat"
+        android:shortcutShortLabel="@string/shortcut_new_chat"
+        android:shortcutLongLabel="@string/shortcut_new_chat"
+        android:icon="@mipmap/ic_launcher"
+        android:enabled="true">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.example.chatdemo"
+            android:targetClass="io.example.chatdemo.MainActivity"
+            android:data="dschat://chat/new" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="voice_input"
+        android:shortcutShortLabel="@string/shortcut_voice"
+        android:shortcutLongLabel="@string/shortcut_voice"
+        android:icon="@mipmap/ic_launcher"
+        android:enabled="true">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.example.chatdemo"
+            android:targetClass="io.example.chatdemo.MainActivity"
+            android:data="dschat://chat/voice" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="take_photo"
+        android:shortcutShortLabel="@string/shortcut_camera"
+        android:shortcutLongLabel="@string/shortcut_camera"
+        android:icon="@mipmap/ic_launcher"
+        android:enabled="true">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.example.chatdemo"
+            android:targetClass="io.example.chatdemo.MainActivity"
+            android:data="dschat://chat/camera" />
+    </shortcut>
+</shortcuts>

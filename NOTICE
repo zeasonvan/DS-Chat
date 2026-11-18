@@ -1,0 +1,39 @@
+DS Chat
+=======
+
+This project is a derivative work of chat-demo:
+
+    chat-demo
+    https://github.com/deepseek-ai/chat-demo
+    Copyright (c) 2026 DeepSeek
+    Licensed under the MIT License (see LICENSE and app/LICENSE).
+
+The original MIT copyright notice and permission notice are retained in
+LICENSE and app/LICENSE as required.
+
+Modifications
+-------------
+The upstream web application has been modified and extended to run as an
+Android application. Principal changes include:
+
+  - Added a Capacitor 8 Android shell (poc/) with native plugins for secure
+    API key storage (Android Keystore, AES-GCM), file saving to MediaStore,
+    incoming share intents, media keep-alive, and window/splash theming.
+  - Reworked the mobile UI (home, sidebar drawer, full-screen settings) to
+    follow the layout of the official DeepSeek Android app.
+  - Added history import/export compatible with DeepSeek's ZIP export format,
+    including chunked native file writing for large archives.
+  - Added API balance query (GET /user/balance) and an entry point to the
+    DeepSeek platform usage page.
+  - Added localization (Simplified Chinese / English), custom profile name and
+    avatar, text-to-speech playback, and assorted accessibility fixes.
+
+No upstream code has been removed except where replaced by the changes above.
+
+Trademarks
+----------
+"DeepSeek" and the DeepSeek logo are trademarks of their respective owner.
+This project is unofficial and is not affiliated with, endorsed by, or
+sponsored by DeepSeek. It uses only the public API at api.deepseek.com and
+does not include or reproduce any proprietary DeepSeek application code,
+assets, or private endpoints.

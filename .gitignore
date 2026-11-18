@@ -1,0 +1,27 @@
+# Node / build output
+node_modules/
+dist/
+build/
+.gradle/
+.cache/
+
+# Generated Capacitor assets
+poc/www/
+poc/android/app/src/main/assets/public/
+
+# Local configuration
+local.properties
+.env
+.env.*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.iml
+
+# Packages
+*.apk
+*.aab
+*.jks
+*.keystore

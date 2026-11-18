@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>DS Chat</title>
+    <style>
+      /* 启动页：原生启动图与这里保持同一构图，页面渲染完成后淡出 */
+      #splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2b4acb;
+        transition: opacity 0.24s ease;
+      }
+      #splash img {
+        width: min(72vw, 380px);
+        height: auto;
+        display: block;
+        user-select: none;
+        -webkit-user-drag: none;
+      }
+      #splash.splash-hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="splash" aria-hidden="true"><img src="splash.webp" alt="" /></div>
+    <script>
+      // 兜底：脚本异常时也不会一直停在启动页
+      setTimeout(function () {
+        var el = document.getElementById('splash')
+        if (!el) return
+        el.classList.add('splash-hide')
+        setTimeout(function () { el.remove() }, 300)
+      }, 8000)
+    </script>
+  </body>
+</html>

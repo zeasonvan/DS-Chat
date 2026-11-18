@@ -1,0 +1,11 @@
+{
+  "appId": "io.example.chatdemo",
+  "appName": "DS Chat",
+  "webDir": "www",
+  "loggingBehavior": "none",
+  "backgroundColor": "#2B4ACB",
+  "server": {
+    "androidScheme": "https",
+    "hostname": "localhost"
+  }
+}
