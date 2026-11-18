@@ -13,6 +13,14 @@
 | `poc/` | Capacitor 8 Android 壳与原生插件 |
 | `branding/` | 应用图标、启动页与吉祥物素材 |
 
+## 构建
+
+```bash
+cd app && npm install && npm run build
+cd ../poc && rsync -a --delete ../app/dist/ www/ && npx cap sync android
+cd android && ./gradlew assembleDebug
+```
+
 ## 许可
 
 MIT License，见 [LICENSE](LICENSE)。上游版权声明与修改说明见 [NOTICE](NOTICE)。
